@@ -18,7 +18,7 @@ plot1 <- function () {
                                 na.string="?",
                                 stringsAsFactor=FALSE)
 
-  ## convert HDate and Time to R Date and Time objects
+  ## convert Date and Time to R Date and Time objects
   
   consumption_data[,1] <- as.Date(consumption_data[,1], format="%d/%m/%Y")
   consumption_data[,2] <- paste(consumption_data[,1],
