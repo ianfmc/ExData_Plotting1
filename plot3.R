@@ -13,7 +13,6 @@ plot3 <- function () {
   
   consumption_data <- read.table("household_power_consumption.txt",
                                  header=TRUE,
-                                 nrows=70000,
                                  sep=";",
                                  na.string="?",
                                  stringsAsFactor=FALSE)
@@ -39,7 +38,7 @@ plot3 <- function () {
   
   print(Sys.time())
   
-  png("plot2.png", width=480, height=480)
+  png("plot3.png", width=480, height=480)
   plot(selected_consumption_data$Time,
        selected_consumption_data$Sub_metering_1,
        type="l",
