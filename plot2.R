@@ -38,7 +38,9 @@ plot2 <- function () {
   
   print(Sys.time())
   
-  png("plot2.png", width=480, height=480)
+  png("plot2.png", 
+      width=480, 
+      height=480)
   plot(selected_consumption_data$Time,
        selected_consumption_data$Global_active_power,
        type="l",
