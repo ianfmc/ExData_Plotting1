@@ -13,7 +13,6 @@ plot2 <- function () {
   
   consumption_data <- read.table("household_power_consumption.txt",
                                  header=TRUE,
-                                 ## nrows=700000,
                                  sep=";",
                                  na.string="?",
                                  stringsAsFactor=FALSE)
