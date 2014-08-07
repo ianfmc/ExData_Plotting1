@@ -45,6 +45,5 @@ plot1 <- function () {
        xlab="Global Active Power (kilowatts)")
   dev.off()
   
-  ## return (consumption_data)  
   print(Sys.time())
 }
